@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* declared variable */
+:root {
+  --bg-clr: rgba(30, 31, 31, 1);
+  --accent-clr: rgb(213, 137, 31);
+}
+
+/* Whole web page is dark */
+body {
+  background-color: var(--bg-clr);
+}
+
+#shop-btn {
+  display: block;
+  position: fixed;
+  top: 87%;
+  left: 95%;
+  background-color: var(--accent-clr);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg-clr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+}
+
+nav div.logo {
+  color: white;
+  font-size: 1.2vw;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr#nav {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: solid;
+  border-width: 3px;
+  color: var(--accent-clr);
+  width: 99.7%;
+  /* position: fixed;
+  top: 95px; */
+}
+
+h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02em; 
+}
+
+.blue:hover {
+  color: rgb(213, 137, 31);
+  transition: all 0.5s;
+}
+
+/* Options */
+
+section.options {
+  display: flex;
+  margin: 10px 20px 0;
+  justify-content: space-between;
+}
+
+
+.options div a {
+  color: black;
+}
+
+/* test */
+.options a {
+  display: block;
+  color: black;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.658);
+  padding: 5px 65px;
+}
+
+/* food choices */
+
+section.category {
+  margin: 40px 20px;
+}
+
+section.category h2 {
+  text-align: center;
+}
+
+div.choices {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.choices .container {
+  cursor: pointer;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .choice-img{
+  width: 290px;
+  height: 300px;
+  background-size: cover;
+}
+
+.choice-name,
+.choice-price {
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.choice-price {
+  color: var(--accent-clr);
+}
+
+.container hr {
+  display: block;
+  width: 25px;
+  margin-inline: auto;
+}
+
+section#footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(213, 137, 31);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#footer h3 {
+  color: white;
+  text-align: center;
+}
+
+section#footer h4 {
+  color: white;
+  text-align: center;
+}

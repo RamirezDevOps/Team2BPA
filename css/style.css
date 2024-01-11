@@ -1,0 +1,636 @@
+* {
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.02em; 
+}
+
+h4 {
+    color: white;
+    font-family: 'Montserrat' sans-serif;
+    letter-spacing: 0.01em;
+}
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section#banner div hr { 
+    margin-top: 70px;
+    margin-bottom: 0.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 0.5px;
+    color: rgb(213, 137, 31);
+    width: 150px;
+}
+
+hr#nav {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 3px;
+    color: rgb(33, 109, 167);
+    width: 99.7%;
+    position: fixed;
+}
+
+nav {
+ width: 100%;
+ height: 100px;
+ background-color: rgba(30, 31, 31, 1);
+ position: fixed;
+ z-index: 1;
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav div.logo {
+    color: white;
+    font-size: 1.2vw;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blue:hover {
+    color: rgb(213, 137, 31);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}
+
+.zoom:hover {
+    transform: scale(111%);
+}
+
+section#banner {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(38,36,37,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#banner img {
+    height: 90vh;
+    width: auto;
+    object-fit: cover;
+}
+
+section#banner div {
+    width: 60vw;
+    height: 75vh;
+    margin-right: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section#banner div h1 {
+    font-size: 80px;
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+section#banner div h2 {
+    font-size: 30px;
+    text-align: right;
+}
+
+section#hours {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#favorites {
+    background-color: rgb(222, 217, 209);
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#favorites:nth-child(1) {
+    padding-bottom: 80px;
+}
+
+section#favorites div h2 {
+    color: rgba(38,36,37,1);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+section#favorites div.dishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#favorites div.dishes div.dish {
+    width: 15vw;
+    height: 250px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section#favorites div.dish img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+section#favorites div.dishes div.dish h3 {
+    color: rgba(38,36,37,1);
+}
+
+section#hours h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+section#hours h2 {
+    margin-right: 50px;
+}
+
+section#info {
+    width: 100%;
+    height: 160vh;
+    background: linear-gradient(rgba(1,1, 1, .6), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/3997609/pexels-photo-3997609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#info h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+section#info div.content {
+    width: 400px;
+    height: 55vh;
+    text-align: center;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#info div.content h3 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+section#info1 div.content {
+    margin-right: 30px;
+    display: flex;
+}
+
+div#info1 div img {
+    width: auto;
+    height: 40vh;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+div#info2 div img {
+    width: auto;
+    height: 40vh;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+
+section#info div#info1 {
+    width: 100%;
+    height: 40vh;
+    padding-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#info div#info2 {
+    width: 100%;
+    height: 40vh;
+    padding-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#info button {
+    width: 200px;
+    height: 60px;
+    margin-top: 80px;
+    background-color: rgb(213, 137, 31);
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+section#about {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+section#about img {
+    width: auto;
+    height: 100vh;
+
+}
+
+section#about div.aboutus {
+    background-color: rgba(38,36,37,1);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section#about div.aboutus div {
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#about div.aboutus div h2 {
+    font-size: 40px;
+    text-align: right;
+}
+
+section#about div.aboutus div hr { 
+    margin-top: 10px;
+    margin-bottom: 0.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 0.5px;
+    color: rgb(213, 137, 31);
+    width: 180px;
+}
+
+section#about div.aboutus h3 {
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+section#footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(213, 137, 31);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#footer h3 {
+    color: white;
+    text-align: center;
+}
+
+section#footer h4 {
+    color: white;
+    text-align: center;
+}
+
+#events-title {
+    width: 100%;
+    height: 100px;
+    padding-top: 100px;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(38,36,37,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#events {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section#events div#datenight {
+    width: 100%;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+section#events div#datenight div.left {
+    width: 50vw;
+    height: 75vh;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#events h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+section#events h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+section#events p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+section#events div#datenight div.right {
+    width: 50vw;
+    height: 75vh;
+}
+
+section#events div#datenight div.right img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+div.left {
+    width: 50vw;
+    height: 75vh;
+}
+
+div.right {
+    width: 50vw;
+    height: 75vh;
+}
+
+section#events div#open_mic {
+    width: 100%;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+section#events div#open_mic div.left img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+section#events div#open_mic div.right {
+    width: 50vw;
+    height: 75vh;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contactus {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#contactus div#title {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(213, 137, 31);
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contactus div#under {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#contactus div#under div.contactburger {
+    width: 40vw;
+    height: 100%;
+}
+
+section#contactus div#under div.contactburger img {
+    width: 30vw;
+    height: 77vh;
+    object-fit: cover;
+}
+
+section#contactus div#under div.contacts {
+    background-color: rgba(38,36,37,1);
+    width: 100%;
+    height: 77vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contactus div#under div.contacts #location {
+    width: 60%;
+    height: 40vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#location p {
+    padding-top: 10px;
+}
+
+form {
+    width: 60%; 
+    padding-bottom: 60px;
+
+}
+
+.input-group {
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    cursor: text;
+    color: white;
+    padding-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus~label {
+    top: -37px;
+}
+
+button {
+    padding: 10px 0px;
+    color: white;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(1,1,1,0.8),rgba(1,1,1,0.8)), url(../images/pexels-reservation-room.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero div#reservation-info {
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    background-color: rgba(38,36,37,1);
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#hero div#reservation-info form {
+    margin-top: 70px;
+}
